@@ -1,7 +1,7 @@
 import type { Language, Namespace } from "@/types";
 
 export async function getTranslations(lang: Language, namespace: Namespace) {
-  const supportedLangs: Language[] = ["uz", "ru", "eng"];
+  const supportedLangs: Language[] = ["uz", "ru", "en"];
   const finalLang = supportedLangs.includes(lang) ? lang : "uz"; // fallback
 
   try {
