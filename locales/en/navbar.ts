@@ -1,6 +1,7 @@
 export default {
     home: "Home",
     products: "Products",
-    contact: "Contact"
+    contact: "Contact",
+    start:"Start"
   };
   

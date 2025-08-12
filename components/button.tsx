@@ -1,8 +1,8 @@
 import React from "react";
+import "./button.css";
 
 interface IButtonTypes {
-  txt?: string;
-  func?: React.MouseEventHandler<HTMLButtonElement>;
+  func?: ()=>void;
   style?: string;
   disabled?: boolean;
   children?: React.ReactNode;
@@ -10,15 +10,20 @@ interface IButtonTypes {
 }
 
 const Button = React.memo(function Button({
-  txt,
   disabled = false,
   func = () => {},
   children,
-  style = '',
+  style = "",
+  type
 }: IButtonTypes) {
   return (
-    <button disabled={disabled} className={`${style}`} onClick={func}>
-      {txt || children}
+    <button
+    type={type}
+      disabled={disabled}
+      className={`shine-button bg-[#4236c4] text-white px-3 py-2 rounded-[8px] ${style}`}
+      onClick={func}
+    >
+      {children}
     </button>
   );
 });

@@ -1,6 +1,7 @@
 export default {
     home: "Домашняя страница",
     products: "Наши продукты",
-    contact: "Контакт"
+    contact: "Контакт",
+    start:"Начать"
   };
   
