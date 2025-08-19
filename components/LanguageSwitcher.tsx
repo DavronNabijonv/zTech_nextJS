@@ -21,7 +21,7 @@ export default function LanguageSwitcher() {
     <select
       value={currentLang}
       onChange={changeLanguage}
-      className="appearance-none hover:bg-gray-700 shadow-white p-[8px] rounded-[10px] flex flex-col justify-center items-center"
+      className="appearance-none hover:cursor-pointer p-[8px] rounded-[10px] flex flex-col justify-center items-center"
     >
       <option value="uz">O`z</option>
       <option value="ru">Py</option>
